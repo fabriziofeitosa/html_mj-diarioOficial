@@ -311,6 +311,9 @@ body, html {
           &::placeholder {
             opacity: .5;
           }
+          &:focus {
+            outline: none;
+          }
         }
         button {
           margin: 0;
