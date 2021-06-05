@@ -28,6 +28,10 @@ body, html {
     max-width: calc(100% - #{$lateralDesk});
   }
 
+  .titulo, .sub {
+    text-align: center;
+  }
+
   .titulo {
     color: $verde;
     margin: 0;
@@ -39,6 +43,12 @@ body, html {
     font-size: 18px;
   }
 
+  @media screen and (min-width:768px) {
+    .titulo, .sub {
+      text-align: left;
+    }
+  }
+
   .busca {
     margin-top: 20px;
     input, select {
@@ -47,7 +57,7 @@ body, html {
       padding: 15px 10px;
       font-size: 18px;
       line-height: 20px;
-      text-align: center;
+      text-align: left;
       width: 100%;
 
       &:focus {
@@ -55,6 +65,12 @@ body, html {
       }
       &::placeholder {
         opacity: .5;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      input, select {
+        text-align: center;
       }
     }
 
@@ -121,10 +137,25 @@ body, html {
       }
 
       .infor {
-        width: 60%;
+        position: relative;
+        width: 100%;
         padding: 10px;
+        @media screen and (min-width:768px) {
+          width: 60%;
+        }
+
         .icone {
-          margin-right: 10px;
+          margin-right: 20px;
+          img {
+            width: 40px;
+          }
+          @media screen and (min-width:768px) {
+            margin-right: 10px;
+            img {
+
+              width: auto;
+            }
+          }
         }
 
         .publicado {
@@ -135,16 +166,44 @@ body, html {
         }
         .tipo {
           font-size: 12px;
-          margin-bottom: 10px;
+          @media screen and (min-width:768px) {
+            margin-bottom: 10px;
+          }
         }
         .edicao {
-          color: $azul;
-          font-size: 14px;
           line-height: 1.2;
+
+          font-size: 12px;
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          display: inline-block;
+          color: #fff;
+          background-color: $verde;
+          padding: 3px 5px;
+
+          @media screen and (min-width:768px) {
+            font-size: 14px;
+            position: unset;
+            display: block;
+            color: $azul;
+            background-color: transparent;
+            padding: 0;
+          }
         }
       }
       .acoes {
-        width: 50%;
+        margin: 0 8px 8px;
+        width: calc(100% - 16px);
+        background-color: #ECF1F3;
+        padding: 8px;
+        @media screen and (min-width:768px) {
+          margin: 0;
+          width: 50%;
+          background-color: transparent;
+          padding: 0;
+        }
+
         .mais-infor {
           width: 40%;
           font-size: 12px;
@@ -166,24 +225,45 @@ body, html {
         .botoes {
           width: 50%;
           color: $azul;
+
+          .baixar, .visualizar {
+            height: 80%;
+            line-height: 5.5;
+            padding: 0 5px;
+            border-radius: 10px;
+          }
           .baixar {
             background-color: #FDD600;
-            height: 50%;
-            border-top-right-radius: 10px;
           }
           .visualizar {
             background-color: #E5E5E5;
-            height: 50%;
-            border-bottom-right-radius: 10px;
+          }
+          @media screen and (min-width:768px) {
+            .baixar, .visualizar {
+              height: 50%;
+              padding: 0;
+              border-radius: 0px;
+            }
+            .baixar {
+              background-color: #FDD600;
+              border-top-right-radius: 10px;
+            }
+            .visualizar {
+              background-color: #E5E5E5;
+              border-bottom-right-radius: 10px;
+            }
           }
 
           a {
             font-family: 'Giga Sans Black';
-            font-size: 11px;
+            font-size: 9px;
             line-height: 1;
             text-decoration: none;
             color: inherit;
             text-transform: uppercase;
+            @media screen and (min-width:768px) {
+              font-size: 11px;
+            }
           }
         }
       }
