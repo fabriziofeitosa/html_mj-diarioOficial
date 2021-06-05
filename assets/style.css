@@ -25,7 +25,7 @@ body, html {
 }
 
 #conteudo .titulo {
-  color: green;
+  color: #009900;
   margin: 0;
   margin-top: 30px;
   font-weight: bold;
@@ -41,7 +41,7 @@ body, html {
 }
 
 #conteudo .busca input, #conteudo .busca select {
-  border: 2px solid green;
+  border: 2px solid #009900;
   border-radius: 10px;
   padding: 15px 10px;
   font-size: 18px;
@@ -85,7 +85,7 @@ body, html {
 
 #conteudo .busca .btn-busca button {
   width: 100%;
-  background-color: green;
+  background-color: #009900;
   color: #fff;
   border: none;
   padding: 15px 30px;
@@ -107,8 +107,53 @@ body, html {
   }
 }
 
+@media screen and (min-width: 768px) {
+  #conteudo .listagem {
+    margin-top: 20px;
+  }
+}
+
+#conteudo .listagem .item {
+  border: 2px solid #009900;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 50%;
+}
+
+#conteudo .listagem .item .infor {
+  width: 60%;
+  padding: 10px;
+}
+
+#conteudo .listagem .item .infor .icone {
+  margin-right: 10px;
+}
+
+#conteudo .listagem .item .infor .publicado {
+  color: #2D276C;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#conteudo .listagem .item .infor .tipo {
+  font-size: 12px;
+}
+
+#conteudo .listagem .item .infor .edicao {
+  color: #2D276C;
+  font-size: 14px;
+}
+
+#conteudo .listagem .item .acoes {
+  width: 40%;
+}
+
+#conteudo .listagem .item .acoes .mais-infor {
+  font-size: 12px;
+}
+
 #lateral {
-  background-color: green;
+  background-color: #009900;
   color: #fff;
   width: 100%;
   max-width: 350px;

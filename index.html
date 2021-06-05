@@ -22,8 +22,16 @@
 
       <!-- Conteudo -->
       <section id="conteudo">
-        <!-- Banner -->
-        <img class="img-fluid banner" src="assets/images/banner.png" alt="Prefeitura">
+        <!-- Banner Desktop e Mobile -->
+        <div class="banner">
+          <div class="mobile d-block d-md-none text-center">
+            <img class="img-fluid" src="assets/images/banner_mobile.png" alt="Prefeitura">
+          </div>
+          <div class="desktop d-none d-md-block text-center">
+            <img class="img-fluid" src="assets/images/banner.png" alt="Prefeitura">
+          </div>
+        </div>
+
         <div class="mini-header d-flex flex-row">
           <div>
             <h2 class="titulo">Diário Oficial do Município de Talismã - Tocantins</h2>
@@ -34,6 +42,7 @@
             <img class="img-fluid" src="assets/images/atm.png" alt="Acesso">
           </div>
         </div>
+
         <!-- Busca -->
         <div class="busca">
           <form action="#" class="d-flex flex-column flex-md-row">
@@ -54,7 +63,40 @@
             </div>
           </form>
         </div>
+
+        <!-- Listagem -->
+        <div class="listagem d-flex flex-column flex-md-row">
+
+          <!-- ITEM -->
+          <div class="item d-flex flex-row">
+            <div class="infor d-flex flex-row">
+              <div class="icone">
+                <img class="img-fluid" src="assets/images/icone_pdf.png" alt="PDF">
+              </div>
+              <div>
+                <div class="publicado">Publicado: 25/03/2021</div>
+                <div class="tipo">Publicação Oﬁcial</div>
+                <div class="edicao">Edição: 20216 / Ano 2021 </div>
+              </div>
+            </div>
+            <div class="acoes d-flex">
+              <div class="mais-infor">
+                <div class="pag">04 Pág.</div>
+                <div class="tamanho">8.32 mb</div>
+                <div class="numero">Nº 20016</div>
+                <div class="qtd-down">120 downloads</div>
+              </div>
+              <div class="botoes d-flex flex-column">
+                <div class="baixar">Baixar</div>
+                <div class="visualizar">Visualizar</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </section>
+      <!-- Fim Conteudo -->
 
       <!-- Lateral -->
       <section id="lateral" class="d-none d-md-flex flex-md-column">

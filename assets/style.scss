@@ -2,6 +2,8 @@
 
 // Variáveis
 $lateralDesk: 350px;
+$verde: #009900;
+$azul: #2D276C;
 
 body, html {
   background-color: rgb(245, 245, 245);
@@ -27,7 +29,7 @@ body, html {
   }
 
   .titulo {
-    color: green;
+    color: $verde;
     margin: 0;
     margin-top: 30px;
     font-weight: bold;
@@ -40,7 +42,7 @@ body, html {
   .busca {
     margin-top: 20px;
     input, select {
-      border: 2px solid green;
+      border: 2px solid $verde;
       border-radius: 10px;
       padding: 15px 10px;
       font-size: 18px;
@@ -71,7 +73,7 @@ body, html {
     .btn-busca {
       button {
         width: 100%;
-        background-color: green;
+        background-color: $verde;
         color: #fff;
         border: none;
         padding: 15px 30px;
@@ -97,10 +99,50 @@ body, html {
       }
     }
   }
+
+  .listagem {
+    @media screen and (min-width:768px) {
+      margin-top: 20px;
+    }
+
+    .item {
+      border: 2px solid $verde;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 50%;
+
+      .infor {
+        width: 60%;
+        padding: 10px;
+        .icone {
+          margin-right: 10px;
+        }
+
+        .publicado {
+          color: $azul;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .tipo {
+          font-size: 12px;
+        }
+        .edicao {
+          color: $azul;
+          font-size: 14px;
+        }
+      }
+      .acoes {
+        width: 40%;
+        .mais-infor {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
 #lateral {
-  background-color: green;
+  background-color: $verde;
   color: #fff;
   width: 100%;
   max-width: $lateralDesk;
