@@ -142,9 +142,6 @@ body, html {
     margin-right: 10px;
     max-width: calc(50% - 10px);
   }
-  #conteudo .listagem .item:nth-child(2n) {
-    border-color: red;
-  }
 }
 
 #conteudo .listagem .item .infor {
