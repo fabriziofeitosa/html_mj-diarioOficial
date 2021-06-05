@@ -23,7 +23,7 @@ body, html {
 #conteudo {
   width: 100%;
   padding: 10px 15px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:992px) {
     padding: 30px 40px;
     max-width: calc(100% - #{$lateralDesk});
   }
@@ -106,10 +106,19 @@ body, html {
     }
 
     .item {
+      background-color: #fff;
       border: 2px solid $verde;
       border-radius: 10px;
       width: 100%;
-      max-width: 50%;
+      margin-bottom: 15px;
+      @media screen and (min-width:1200px) {
+        margin-right: 10px;
+        max-width: calc(50% - 10px);
+
+        &:nth-child(2n) {
+          border-color: red;
+        }
+      }
 
       .infor {
         width: 60%;
@@ -121,20 +130,60 @@ body, html {
         .publicado {
           color: $azul;
           font-size: 18px;
+          line-height: 1.2;
           font-weight: bold;
         }
         .tipo {
           font-size: 12px;
+          margin-bottom: 10px;
         }
         .edicao {
           color: $azul;
           font-size: 14px;
+          line-height: 1.2;
         }
       }
       .acoes {
-        width: 40%;
+        width: 50%;
         .mais-infor {
+          width: 40%;
           font-size: 12px;
+          line-height: 1.2;
+          color: #808080;
+          text-align: right;
+          .pag {
+            text-transform: uppercase;
+          }
+          .pag, .numero {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .tamanho {
+            margin-bottom: 5px;
+          }
+        }
+
+        .botoes {
+          width: 50%;
+          color: $azul;
+          .baixar {
+            background-color: #FDD600;
+            height: 50%;
+            border-top-right-radius: 10px;
+          }
+          .visualizar {
+            background-color: #E5E5E5;
+            height: 50%;
+            border-bottom-right-radius: 10px;
+          }
+
+          a {
+            font-family: 'Giga Sans Black';
+            font-size: 12px;
+            text-decoration: none;
+            color: inherit;
+            text-transform: uppercase;
+          }
         }
       }
     }

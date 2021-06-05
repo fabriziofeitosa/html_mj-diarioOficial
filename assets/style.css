@@ -17,7 +17,7 @@ body, html {
   padding: 10px 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #conteudo {
     padding: 30px 40px;
     max-width: calc(100% - 350px);
@@ -114,10 +114,21 @@ body, html {
 }
 
 #conteudo .listagem .item {
+  background-color: #fff;
   border: 2px solid #009900;
   border-radius: 10px;
   width: 100%;
-  max-width: 50%;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  #conteudo .listagem .item {
+    margin-right: 10px;
+    max-width: calc(50% - 10px);
+  }
+  #conteudo .listagem .item:nth-child(2n) {
+    border-color: red;
+  }
 }
 
 #conteudo .listagem .item .infor {
@@ -132,24 +143,69 @@ body, html {
 #conteudo .listagem .item .infor .publicado {
   color: #2D276C;
   font-size: 18px;
+  line-height: 1.2;
   font-weight: bold;
 }
 
 #conteudo .listagem .item .infor .tipo {
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 #conteudo .listagem .item .infor .edicao {
   color: #2D276C;
   font-size: 14px;
+  line-height: 1.2;
 }
 
 #conteudo .listagem .item .acoes {
-  width: 40%;
+  width: 50%;
 }
 
 #conteudo .listagem .item .acoes .mais-infor {
+  width: 40%;
   font-size: 12px;
+  line-height: 1.2;
+  color: #808080;
+  text-align: right;
+}
+
+#conteudo .listagem .item .acoes .mais-infor .pag {
+  text-transform: uppercase;
+}
+
+#conteudo .listagem .item .acoes .mais-infor .pag, #conteudo .listagem .item .acoes .mais-infor .numero {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#conteudo .listagem .item .acoes .mais-infor .tamanho {
+  margin-bottom: 5px;
+}
+
+#conteudo .listagem .item .acoes .botoes {
+  width: 50%;
+  color: #2D276C;
+}
+
+#conteudo .listagem .item .acoes .botoes .baixar {
+  background-color: #FDD600;
+  height: 50%;
+  border-top-right-radius: 10px;
+}
+
+#conteudo .listagem .item .acoes .botoes .visualizar {
+  background-color: #E5E5E5;
+  height: 50%;
+  border-bottom-right-radius: 10px;
+}
+
+#conteudo .listagem .item .acoes .botoes a {
+  font-family: 'Giga Sans Black';
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
 }
 
 #lateral {
