@@ -28,6 +28,12 @@ body, html {
     max-width: calc(100% - #{$lateralDesk});
   }
 
+  .mini-header {
+    .acesso {
+      width: 110px;
+    }
+  }
+
   .titulo, .sub {
     text-align: center;
   }

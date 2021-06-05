@@ -24,6 +24,10 @@ body, html {
   }
 }
 
+#conteudo .mini-header .acesso {
+  width: 110px;
+}
+
 #conteudo .titulo, #conteudo .sub {
   text-align: center;
 }
