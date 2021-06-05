@@ -36,6 +36,77 @@ body, html {
   font-size: 18px;
 }
 
+#conteudo .busca {
+  margin-top: 20px;
+}
+
+#conteudo .busca input, #conteudo .busca select {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#conteudo .busca input:focus, #conteudo .busca select:focus {
+  outline: none;
+}
+
+#conteudo .busca input::-webkit-input-placeholder, #conteudo .busca select::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+#conteudo .busca input:-ms-input-placeholder, #conteudo .busca select:-ms-input-placeholder {
+  opacity: .5;
+}
+
+#conteudo .busca input::-ms-input-placeholder, #conteudo .busca select::-ms-input-placeholder {
+  opacity: .5;
+}
+
+#conteudo .busca input::placeholder, #conteudo .busca select::placeholder {
+  opacity: .5;
+}
+
+#conteudo .busca .palavra, #conteudo .busca .ano, #conteudo .busca .edicao, #conteudo .busca .btn-busca {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#conteudo .busca .ano {
+  width: 100%;
+}
+
+#conteudo .busca .ano select {
+  padding: 14px 10px;
+}
+
+#conteudo .busca .btn-busca button {
+  width: 100%;
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #conteudo .busca .ano {
+    width: 30%;
+  }
+  #conteudo .busca .palavra, #conteudo .busca .ano, #conteudo .busca .edicao, #conteudo .busca .btn-busca {
+    margin-bottom: 0;
+  }
+  #conteudo .busca .palavra, #conteudo .busca .ano, #conteudo .busca .edicao {
+    margin-right: 20px;
+  }
+  #conteudo .busca .edicao {
+    width: 50%;
+  }
+}
+
 #lateral {
   background-color: green;
   color: #fff;
