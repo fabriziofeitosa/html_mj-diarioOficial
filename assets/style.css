@@ -319,6 +319,62 @@ body, html {
   }
 }
 
+#conteudo .rodape .novidades {
+  margin-right: 40px;
+}
+
+#conteudo .rodape .novidades .tit {
+  margin: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+#conteudo .rodape .novidades .sub {
+  font-size: 10px;
+}
+
+#conteudo .rodape .novidades .form {
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+#conteudo .rodape .novidades .form input {
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  padding: 6px 10px;
+  line-height: 1;
+}
+
+#conteudo .rodape .novidades .form input::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+#conteudo .rodape .novidades .form input:-ms-input-placeholder {
+  opacity: .5;
+}
+
+#conteudo .rodape .novidades .form input::-ms-input-placeholder {
+  opacity: .5;
+}
+
+#conteudo .rodape .novidades .form input::placeholder {
+  opacity: .5;
+}
+
+#conteudo .rodape .novidades .form button {
+  margin: 0;
+  border: 0;
+  font-size: 10px;
+  padding: 7px 10px;
+  background-color: #666666;
+  color: #fff;
+}
+
+#conteudo .rodape .ooka img {
+  width: 150px;
+}
+
 #lateral {
   background-color: #009900;
   color: #fff;
