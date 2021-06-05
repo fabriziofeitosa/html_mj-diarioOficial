@@ -1,9 +1,16 @@
+// Desenvolvido por Fabrizio Feitosa - fabriziofeitosa.me
+
+// Variáveis
+$lateralDesk: 400px;
+
 body, html {
   background-color: rgb(245, 245, 245);
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+
+  font-family: 'Asap', sans-serif;
 }
 
 #main {
@@ -12,14 +19,22 @@ body, html {
 }
 
 #conteudo {
-  width: calc(100% - 200px);
+  width: calc(100% - #{$lateralDesk});
+  padding: 30px 40px;
   .titulo {
     color: green;
+    margin: 0;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .sub {
+    color: #666666;
+    font-size: 18px;
   }
 }
 
 #lateral {
   background-color: green;
   width: 100%;
-  max-width: 200px;
+  max-width: $lateralDesk;
 }
