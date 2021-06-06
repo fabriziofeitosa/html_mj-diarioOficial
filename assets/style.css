@@ -332,6 +332,7 @@ body, html {
 
 #conteudo .rodape .novidades .sub {
   font-size: 10px;
+  text-align: left;
 }
 
 #conteudo .rodape .novidades .form {
@@ -378,6 +379,39 @@ body, html {
 
 #conteudo .rodape .ooka img {
   width: 150px;
+}
+
+#conteudo .rodape.mobile .novidades {
+  margin: 30px 0;
+}
+
+#conteudo .rodape.mobile .novidades .tit {
+  font-size: 18px;
+}
+
+#conteudo .rodape.mobile .novidades .sub {
+  font-size: 14px;
+}
+
+#conteudo .rodape.mobile .novidades .form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#conteudo .rodape.mobile .novidades .form button {
+  font-size: 16px;
+}
+
+#conteudo .rodape.mobile .acesso {
+  width: 120px;
+}
+
+#conteudo .rodape.mobile .ooka {
+  text-align: center;
+  background-color: #009900;
+  margin: 20px -15px -10px;
+  padding: 15px 10px;
 }
 
 #lateral {
