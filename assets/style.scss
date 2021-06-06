@@ -426,9 +426,13 @@ body, html {
   }
 
   .fechar-lateral {
+    display: block;
     position: absolute;
     top: 25px;
     right: 10px;
+    @media screen and (min-width:768px) {
+      display: none;
+    }
     img {
       width: 32px;
     }
