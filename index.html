@@ -27,7 +27,7 @@
           <div class="item acesso">
             <a href="#"><img src="assets/images/Config.png" alt="Acesso"></a>
           </div>
-          <div class="item calendario">
+          <div class="item calendario" onclick="calendario()">
             <a href="#"><img src="assets/images/Calendar.png" alt="Calendário"></a>
           </div>
         </div>
@@ -505,7 +505,7 @@
             <a href="#"><img class="img-fluid" src="assets/images/atm.png" alt="Acesso"></a>
           </div>
           <div class="ooka">
-            <a href="#"><img src="assets/images/ooka-branca.png" alt="Ooka"></a>
+            <a href="#"><img src="assets/images/ooka.png" alt="Ooka"></a>
           </div>
         </div>
 
@@ -514,6 +514,11 @@
 
       <!-- Lateral | PARA MOSTRAR BASTA ADD A CLASS 'aberto' E SERÁ MOSTRADO -->
       <section id="lateral" class="d-none d-lg-flex flex-column">
+        <!-- Botão pra fechar -->
+        <div class="fechar-lateral" onclick="calendario()">
+          <img src="assets/images/cancel.png" alt="Fechar Calendário">
+        </div>
+
         <!-- Data de HOJE -->
         <div class="data">Hoje 26 de março de 2021</div>
         <div class="logo">
@@ -561,5 +566,12 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script>
+      function calendario() {
+        var element = document.getElementById("lateral");
+        element.classList.toggle("aberto");
+      }
+    </script>
   </body>
 </html>

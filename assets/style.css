@@ -465,8 +465,19 @@ body, html {
   position: absolute;
   top: 0;
   right: 0;
-  width: 90vw;
+  width: 95vw;
+  max-width: 100%;
   height: 100vh;
   overflow-y: auto;
+}
+
+#lateral .fechar-lateral {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+#lateral .fechar-lateral img {
+  width: 32px;
 }
 /*# sourceMappingURL=style.css.map */
