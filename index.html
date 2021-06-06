@@ -16,7 +16,7 @@
 
     <title>Diário Oficial</title>
   </head>
-  <body>
+  <body id="body">
     <!-- Essa div vai contar a área de conteudo e a lateral -->
     <div id="main" class="d-flex flex-row align-items-stretch">
 
@@ -570,7 +570,9 @@
     <script>
       function calendario() {
         var element = document.getElementById("lateral");
+        var body = document.getElementById("body");
         element.classList.toggle("aberto");
+        body.classList.toggle("overflow-hidden");
       }
     </script>
   </body>
