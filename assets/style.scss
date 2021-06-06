@@ -29,6 +29,14 @@ body, html {
     max-width: calc(100% - #{$lateralDesk});
   }
 
+  @media screen and (max-width:991px) {
+    .banner {
+      border: 2px solid $verde;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+  }
+
   .mini-header {
     .acesso {
       width: 110px;
@@ -367,6 +375,15 @@ body, html {
       }
     }
   }
+
+  .atalhos {
+    > .item {
+      margin-right: 10px;
+    }
+    img {
+      max-width: 32px;
+    }
+  }
 }
 
 #lateral {
@@ -395,5 +412,15 @@ body, html {
 
   .contato {
     font-size: 14px;
+  }
+
+  &.aberto {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90vw;
+    height: 100vh;
+    overflow-y: auto;
   }
 }

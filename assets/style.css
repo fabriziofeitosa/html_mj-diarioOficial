@@ -25,6 +25,14 @@ body, html {
   }
 }
 
+@media screen and (max-width: 991px) {
+  #conteudo .banner {
+    border: 2px solid #009900;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+}
+
 #conteudo .mini-header .acesso {
   width: 110px;
 }
@@ -414,6 +422,14 @@ body, html {
   padding: 15px 10px;
 }
 
+#conteudo .atalhos > .item {
+  margin-right: 10px;
+}
+
+#conteudo .atalhos img {
+  max-width: 32px;
+}
+
 #lateral {
   background-color: #009900;
   color: #fff;
@@ -442,5 +458,15 @@ body, html {
 
 #lateral .contato {
   font-size: 14px;
+}
+
+#lateral.aberto {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90vw;
+  height: 100vh;
+  overflow-y: auto;
 }
 /*# sourceMappingURL=style.css.map */
